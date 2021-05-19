@@ -3,9 +3,6 @@ Ideas:
 - something with the name?
 - owner:
     - certain owners dominant on certain islands?
-- collaborators:
-    - parcels per collaborator
-    - number of collaborator-owners
 - check for attributes that are non-standard
 
 Questions:
