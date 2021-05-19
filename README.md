@@ -3,7 +3,6 @@ Ideas:
 - something with the name?
 - owner:
     - certain owners dominant on certain islands?
-- check for attributes that are non-standard
 
 Questions:
 - labels?
