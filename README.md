@@ -16,3 +16,6 @@ Ideas:
 Questions:
 - labels?
 - what is geometry?
+
+Misc:
+- Start using https://www.reviewnb.com/
