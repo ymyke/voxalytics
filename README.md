@@ -10,3 +10,6 @@ Questions:
 
 Misc:
 - Start using https://www.reviewnb.com/
+
+Resources:
+- https://wiki.cryptovoxels.com/en/External-API
