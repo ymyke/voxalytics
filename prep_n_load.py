@@ -13,6 +13,7 @@ __all__ = [
 
 from typing import List
 from collections import Counter
+from datetime import datetime
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -27,6 +28,7 @@ PARCELS_URL = "https://www.cryptovoxels.com/api/parcels.json"
 response = requests.request("GET", PARCELS_URL)
 parcels = pd.DataFrame.from_records(response.json()["parcels"])
 parcels["voxvolume"] = parcels.area * parcels.height * 8
+print(datetime.utcnow().strftime("%c"), " UTC")
 print("{} parcels loaded.".format(parcels.shape[0]))
 
 
