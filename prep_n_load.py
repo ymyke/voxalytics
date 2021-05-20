@@ -1,6 +1,7 @@
 __all__ = ["parcels", "sns", "plt", "show_leaderboard"]
 
 import requests
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import List
@@ -13,8 +14,11 @@ sns.set_style("whitegrid")
 
 url = "https://www.cryptovoxels.com/api/parcels.json"
 response = requests.request("GET", url)
-parcels = response.json()["parcels"]
-print("{} parcels loaded.".format(len(parcels)))
+# parcels = response.json()["parcels"]
+parcels = pd.DataFrame.from_records(response.json()["parcels"])
+parcels["voxvolume"] = parcels.area * parcels.height * 8
+print("{} parcels loaded.".format(parcels.shape[0]))
+
 
 # Functions:
 
