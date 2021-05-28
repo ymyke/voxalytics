@@ -3,6 +3,9 @@
 __all__ = [
     # Dataframes:
     "parcels",
+    "island_sizes",
+    # JSONs:
+    "parcels_json",
     # Functions:
     "show_leaderboard",
     # Some libraries to be used in the notebooks:
@@ -26,10 +29,18 @@ sns.set_style("whitegrid")
 
 PARCELS_URL = "https://www.cryptovoxels.com/api/parcels.json"
 response = requests.request("GET", PARCELS_URL)
-parcels = pd.DataFrame.from_records(response.json()["parcels"])
+parcels_json = response.json()["parcels"]
+parcels = pd.DataFrame.from_records(parcels_json)
 parcels["voxvolume"] = parcels.area * parcels.height * 8
 print(datetime.utcnow().strftime("%c"), " UTC")
 print("{} parcels loaded.".format(parcels.shape[0]))
+
+island_sizes = (
+    parcels.groupby("island")
+    .agg({"id": "count", "area": "sum", "voxvolume": "sum"})
+    .rename(columns={"id": "parcels"})
+)
+island_sizes["voxperparcel"] = island_sizes.voxvolume / island_sizes.parcels
 
 
 # Functions:
