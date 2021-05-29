@@ -8,6 +8,7 @@ __all__ = [
     "parcels_json",
     # Functions:
     "show_leaderboard",
+    "counter_to_string",
     # Some libraries to be used in the notebooks:
     "sns",
     "plt",
@@ -47,7 +48,7 @@ island_sizes["voxperparcel"] = island_sizes.voxvolume / island_sizes.parcels
 
 
 def show_leaderboard(
-    address_counts: List[Counter], name: str, entries: int = 10
+    address_counts: List[Counter], name: str, howmany: int = 10
 ) -> None:
     """Show list of Counters as a leaderboard. Counter keys are expected to be ETH
     addresses and get linked to Cryptovoxels.
@@ -55,7 +56,7 @@ def show_leaderboard(
     i = 1
     for (address, count) in sorted(
         address_counts.items(), key=lambda x: x[1], reverse=True
-    )[:entries]:
+    )[:howmany]:
         display(
             HTML(
                 f"{i:02d}. "
@@ -64,3 +65,15 @@ def show_leaderboard(
             )
         )
         i += 1
+
+
+def counter_to_string(counter: Counter, howmany: int = 10) -> str:
+    """Turn counter object into a string showing the top howmany items."""
+    return "\n".join(
+        [
+            f"{cnt:5d}: {key}"
+            for key, cnt in sorted(counter.items(), key=lambda x: x[1], reverse=True)[
+                :howmany
+            ]
+        ]
+    )
