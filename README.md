@@ -2,9 +2,15 @@
 
 A collection of Jupyter notebooks and supporting code to analyze all kinds of aspects around [Cryptovoxels](https://www.cryptovoxels.com/).
 
+## Table of contents
+
+* [Names](names.ipynb) – some stats around parcel names, token counting mostly.
+* [Owners](owners.ipynb) – various stats around owners, collaborators, ownership in general and "parcel whales".
+* [Heights, Areas, Volumes](heights_volumes.ipynb) – various stats around the distribution of heights, areas, and volumes of parcels.
+
 ## How to use
 
-* Open the different notebooks (the files ending in `.ipynb`) and check out the analyses in there.
+* Open the different notebooks (the files ending in `.ipynb`) and check out the analyses in there. Or simply click on the links in the table of contents.
 * You can also checkout the repository and re-run the notebooks locally.
 
 ## How to contribute
