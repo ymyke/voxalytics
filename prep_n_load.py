@@ -59,9 +59,9 @@ def show_leaderboard(
     )[:howmany]:
         display(
             HTML(
-                f"{i:02d}. "
+                f"{i:2d}. "
                 f'<a href="https://www.cryptovoxels.com/avatar/{address}">{address}</a>'
-                f" with {count:03d} {name}"
+                f" with {count:3d} {name}"
             )
         )
         i += 1
