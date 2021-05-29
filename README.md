@@ -12,6 +12,7 @@ A collection of Jupyter notebooks and supporting code to analyze all kinds of as
 
 * Open the different notebooks (the files ending in `.ipynb`) and check out the analyses in there. Or simply click on the links in the table of contents.
 * You can also checkout the repository and re-run the notebooks locally.
+* To review changes between revisions of the Jupyter notebooks, ReviewNB is better suited than Github: https://app.reviewnb.com/ymyke/voxalytics/ (Can also be used to discuss individual sections in a notebook.)
 
 ## How to contribute
 
