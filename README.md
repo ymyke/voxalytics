@@ -16,6 +16,7 @@ A collection of Jupyter notebooks and supporting code to analyze all kinds of as
 
 ## How to contribute
 
+* Discuss existing stats by opening new or adding to existing [Issues](https://github.com/ymyke/voxalytics/issues) (label as `stats discussion`)
 * Add more ideas as to what would be interesting questions to explore as new [Issues](https://github.com/ymyke/voxalytics/issues) (label as `new stats idea`).
 * Help resolve [new stats ideas](https://github.com/ymyke/voxalytics/issues?q=is%3Aissue+is%3Aopen+label%3A%22new+stats+idea%22) either by commenting on possible ways to resolve or by suggesting new code (via pull request or a comment in the issues).
 
