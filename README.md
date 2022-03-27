@@ -12,7 +12,7 @@ A collection of Jupyter notebooks and supporting code to analyze all kinds of as
 
 * [Names](https://nbviewer.org/github/ymyke/voxalytics/blob/main/names.ipynb)
 * [Owners](https://nbviewer.org/github/ymyke/voxalytics/blob/main/owners.ipynb)
-* [Heughts, Areas, Volumes](https://github.com/ymyke/voxalytics/blob/main/heights_volumes.ipynb)
+* [Heughts, Areas, Volumes](https://nbviewer.org/github/ymyke/voxalytics/blob/main/heights_volumes.ipynb)
 
 ## How to use
 
