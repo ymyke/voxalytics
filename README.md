@@ -8,6 +8,12 @@ A collection of Jupyter notebooks and supporting code to analyze all kinds of as
 * [Owners](owners.ipynb) – various stats around owners, collaborators, ownership in general and "parcel whales".
 * [Heights, Areas, Volumes](heights_volumes.ipynb) – various stats around the distribution of heights, areas, and volumes of parcels.
 
+*Note* that Github oftentimes doesn't render the text output in the files, so it might be best to use NBViewer, like so:
+
+* [Names](https://nbviewer.org/github/ymyke/voxalytics/blob/main/names.ipynb)
+* [Owners](https://nbviewer.org/github/ymyke/voxalytics/blob/main/owners.ipynb)
+* [Heughts, Areas, Volumes](https://github.com/ymyke/voxalytics/blob/main/heights_volumes.ipynb)
+
 ## How to use
 
 * Open the different notebooks (the files ending in `.ipynb`) and check out the analyses in there. Or simply click on the links in the table of contents.
